@@ -8,24 +8,99 @@
     
     
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="">Cara Cara</a>
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PRODUCTS</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </header>
+<body>    
+    <nav class="navbar">            
+        <h3><ul class="section_list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul></h3>
+        <h3><div class="logo-top">CARA<img class="pot-icon-top" src="assets/icons8-pottery-96.png">CARA
+        </div> </h3>
+        <h3>
+            <div class="searchbar">
+                <form>
+                    <input type="search">                   
+                    <label>CART (0)</label>
+                </form>                           
+            </div>
+        </h3>
+    </nav>
+        
     <main>
-        <section class="home">
-            <img 
+        <section id="home" class="home">
+            <div class="floating-text">CERAMICS CRAFTED BY HAND...</div>
+            <div class="floating-text">...FROM THE GROUND UP</div>
+            <img class="home-img"
             src="assets/Home_main_handsMakingPottery.jpg" 
             alt="close-up clay covered hands turning clay on potter's wheel into the shape of a vase">
         </section>
+        
+        <section id="about" class="about"> 
+            <h1 class="section-name">ABOUT US
+                <hr class="hr-large-section">            
+            </h1>
+            <div>
+                <section class="about-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
+                        faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
+                        ac turpis egestas maecenas. Odio aenean sed adipiscing diam donec adipiscing tristique
+                        risus nec. Sagittis id consectetur purus ut faucibus. Elit duis tristique sollicitudin nibh sit
+                        amet commodo.
+                    </p>
+                    <img class="about-pic1"
+                    src="assets/About_pic1.jpg"
+                    alt="white vase with pearls around rim with single stemmed plant">
+                    <p>Nulla porttitor massa id neque aliquam
+                        vestibulum morbi. Facilisi nullam vehicula
+                        ipsum a arcu cursus vitae congue. Nam libero
+                        justo laoreet sit amet cursus sit amet dictum.
+                        Tristique magna sit amet purus gravida quis.
+                        Velit euismod in pellentesque massa placerat.
+                        In ante metus dictum at tempor commodo.
+                        Libero nunc consequat interdum varius sit
+                        amet mattis. Egestas sed sed risus pretium
+                        quam vulputate dignissim. Diam phasellus
+                        vestibulum lorem sed risus. Cursus sit amet
+                        dictum sit amet justo donec enim.
+                    </p>
+                    <p>Tincidunt praesent semper feugiat nibh sed.
+                        Vulputate mi sit amet mauris commodo quis
+                        imperdiet massa. Amet tellus cras adipiscing
+                        enim eu turpis egestas pretium aenean.
+                        Nullam ac tortor vitae purus
+                    </p>
+                </section>
+                <section class="about-right">
+                    <img class="about-pic2"
+                    src="assets/About_pic2_flipped.jpg"
+                    alt="large white cylindrical vase holding 3 tall feathery branches">
+                </section>
+            </div>
+        </section>
+
+        <section id="products" class="products"> 
+            <h1 class="section-name">OUR PRODUCTS
+                <hr class="hr-large-section">            
+            </h1>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1 class="section-name">CONTACT US
+                <hr class="hr-large-section">            
+            </h1>
+            <form>
+                <h2>EMAIL</h2>
+                <input type="email" id="email" name="email">
+                <h2>MESSAGE</h2>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br><br>
+                <input class="buttons" type="submit" value="SEND">
+            </form> 
+        </section>
+
     </main>
     
     <footer>
