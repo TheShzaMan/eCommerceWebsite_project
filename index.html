@@ -32,17 +32,14 @@
         <section id="home" class="home">
             <div class="floating-text">CERAMICS CRAFTED BY HAND...</div>
             <div class="floating-text">...FROM THE GROUND UP</div>
-            <img class="home-img"
-            src="assets/Home_main_handsMakingPottery.jpg" 
-            alt="close-up clay covered hands turning clay on potter's wheel into the shape of a vase">
         </section>
         
         <section id="about" class="about"> 
-            <h1 class="section-name">ABOUT US
+            <div class="section-name"><h1>ABOUT US</h1>
                 <hr class="hr-large-section">            
-            </h1>
+            </div>
             <div>
-                <section class="about-left">
+                <div class="about-left">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
                         faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
@@ -72,7 +69,7 @@
                         enim eu turpis egestas pretium aenean.
                         Nullam ac tortor vitae purus
                     </p>
-                </section>
+                </div>
                 <section class="about-right">
                     <img class="about-pic2"
                     src="assets/About_pic2_flipped.jpg"
@@ -82,15 +79,33 @@
         </section>
 
         <section id="products" class="products"> 
-            <h1 class="section-name">OUR PRODUCTS
+            <div class="section-name"><h1>OUR PRODUCTS</h1>
                 <hr class="hr-large-section">            
-            </h1>
+            </div>
+            <div class="card-grid">
+                <div class="product-card">
+                    <img class="product-img" src="assets/mundo_bowls.jpg" alt="One large white bowl behind 2 smaller matching bowls">
+                    <div class="product-name"><h2>MUNDO BOWLS</h2>
+                    </div>
+                    <div class="product-price"><h2>$48.00</h2>
+                    </div>
+                    <hr class="hr-large-cards">
+                    <p>Tincidunt praesent semper feugiat nibh
+                        sed. Vulputate mi sit amet mauris
+                        commodo quis imperdiet massa. Amet
+                        tellus cras adipiscing enim eu turpis
+                        egestas pretium aenean.
+                    </p>
+                    <a class="product-learn" href="">LEARN MORE</a>
+                    <button class="buttons" type="button" href="">ADD TO CART</button>  
+                </div>           
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <h1 class="section-name">CONTACT US
+            <div class="section-name"><h1>CONTACT US</h1>
                 <hr class="hr-large-section">            
-            </h1>
+            </div>
             <form>
                 <h2>EMAIL</h2>
                 <input type="email" id="email" name="email">
@@ -98,12 +113,40 @@
                 <textarea name="message" rows="10" cols="30"></textarea>
                 <br><br>
                 <input class="buttons" type="submit" value="SEND">
+                <br><br><br>
             </form> 
         </section>
 
     </main>
     
     <footer>
+        <div class="foot-top-row">
+            <div class="social">
+                <a href="https://www.youtube.com/">
+                    <img class="social-icon" src="assets/icons8-youtube-96.png">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="social-icon" src="assets/icons8-facebook-96 (1).png">
+                </a>
+            </div> 
+            <div class="logo-bottom">
+                <div class="bottom-caracara one">CARA</div>
+                <div class="bottom-caracara">CARA</div>
+            </div> 
+            <div class="social"> 
+                <a href="https://www.twitter.com/">
+                    <img class="social-icon" src="assets/icons8-twitter-96.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="social-icon" src="assets/icons8-instagram-96.png">
+                </a>
+            </div>
+        </div>
+        <div class="foot-bottom-row">
+            <p>Pretium nibh ipsum consequat nisl vel pretium.</p>
+            <p>Amet tellus cras adipiscing enim eu turpis.</p>
+            <p>©Copyright 2015 - 2020</p>
+        </div>
 
     </footer>
 </body>
