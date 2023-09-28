@@ -12,56 +12,148 @@ a {
     text-decoration: none;
     color: black;
 }
+.flex-container{
+    display: flex;
+    
+}
 
 .navbar{
    
     display: flex;
-   
+    flex-direction: column;
+    align-items: center;
+    /*justify-content:space-between;*/
+    row-gap: 0px;
+    width: 100%;    
+}
+.nav-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 75px;
+    font-weight: lighter;
     
-    
-    
+}
+
+.nav-bottom{
+width: 100%;
+height: 25px;
 }
 .section_list{
     display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-color:black;
-    flex-direction: row;    
+    flex-direction: row;
+    justify-content: space-around;    
     list-style: none;
-
+    width: 33%;
+    height: 60px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    padding: 0;
+    
 }
+
+
 .logo-top{
     display: flex;
     font-size: 1.25em;
     font-weight: lighter;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    height: 60px;
+    margin-top: 8px;
+    
+    
+    
 }
 .pot-icon-top{
     width: 35px;
     height: 35px;
 }
+
+.searchbar{
+    display: flex;    
+    width: 33%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    margin-top: 8px;
+}
+.bar{
+    display: flex;
+    margin-left: 80px;
+    background-image: url(assets/1200px-Google_Magnifying_Glass.svg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+}
+
+.search-icon{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.hr-large-full{
+    width: 90%;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;    
+    margin-top: 0;
+    
+}
+
 .section-name{
 
 
 }
 .hr-large-section{
-
+    width: 55%;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
 }
 .home{
     display: flex;
     background-image: linear-gradient(to right, black, transparent, black), url(assets/Home_main_handsMakingPottery.jpg);
     height: 633px;   
     background-size: cover;
-    flex-direction: column;
-    align-items: baseline;    
+    flex-direction: row;
+    justify-content: space-evenly; 
+       
 }
 .home-img{
     width: 100%;
     height: 633px; 
 }
-.floating-text{
 
+.textbox{
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.floating-text{
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: xxx-large;
+    margin: 20px;
+    letter-spacing: 10px;
+    
+}
+.text1{
+    
+    align-self: flex-start;
+    margin-top: 100px;
+}
+.text2{
+    align-self: flex-end;
+    margin-bottom: 100px;
 }
 .about{
 
@@ -97,8 +189,12 @@ a {
 
 }
 .product-learn{
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     color: #BF7631;
+}
+
+.hr-small-learn{
+
 }
 
 .contact{

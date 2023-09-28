@@ -8,30 +8,42 @@
     
     
 </head>
-<body>    
-    <nav class="navbar">            
-        <h3><ul class="section_list">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#products">PRODUCTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul></h3>
-        <h3><div class="logo-top">CARA<img class="pot-icon-top" src="assets/icons8-pottery-96.png">CARA
-        </div> </h3>
-        <h3>
-            <div class="searchbar">
-                <form>
-                    <input type="search">                   
-                    <label>CART (0)</label>
-                </form>                           
+<body>      
+    <nav> 
+        <div class="flex-container">
+            <div class="navbar">            
+                <div class="nav-top">
+                    <ul class="section_list">
+                        <li><a href="#home"><h3>HOME</h3></a></li>
+                        <li><a href="#about"><h3>ABOUT</h3></a></li>
+                        <li><a href="#products"><h3>PRODUCTS</h3></a></li>
+                        <li><a href="#contact"><h3>CONTACT</h3></a></li>
+                    </ul>
+                    <div class="logo-top">
+                        <h3>CARA</h3>
+                        <img class="pot-icon-top" src="assets/icons8-pottery-96.png">
+                        <h3>CARA</h3>
+                    </div>         
+                    <div class="searchbar">
+                        <form action="https://www.google.com/">
+                            <input class="bar" type="search" >                                       
+                        </form>
+                        <a href=""><h3>CART (0)</h3></a>                          
+                    </div>
+                </div>
+                <div class="nav-bottom">
+                    <hr class="hr-large-full">
+                </div>
             </div>
-        </h3>
+        </div>        
     </nav>
-        
-    <main>
+    
+    <main>        
         <section id="home" class="home">
-            <div class="floating-text">CERAMICS CRAFTED BY HAND...</div>
-            <div class="floating-text">...FROM THE GROUND UP</div>
+            <div class="flex-container textbox">                
+                <div class="floating-text text1">CERAMICS CRAFTED BY HAND...</div>
+                <div class="floating-text text2">...FROM THE GROUND UP</div>               
+            </div>    
         </section>
         
         <section id="about" class="about"> 
@@ -96,7 +108,9 @@
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
                     </p>
+                    
                     <a class="product-learn" href="">LEARN MORE</a>
+                    <hr class="hr-small-learn">
                     <button class="buttons" type="button" href="">ADD TO CART</button>  
                 </div>           
             </div>
@@ -129,10 +143,12 @@
                     <img class="social-icon" src="assets/icons8-facebook-96 (1).png">
                 </a>
             </div> 
-            <div class="logo-bottom">
-                <div class="bottom-caracara one">CARA</div>
-                <div class="bottom-caracara">CARA</div>
-            </div> 
+            <a  href="#home">
+                <div class="logo-bottom">
+                    <div class="bottom-caracara one">CARA</div>
+                    <div class="bottom-caracara">CARA</div>
+                </div>  
+            </a>    
             <div class="social"> 
                 <a href="https://www.twitter.com/">
                     <img class="social-icon" src="assets/icons8-twitter-96.png">
