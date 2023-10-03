@@ -1,12 +1,16 @@
-html {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
+    min-height: 100vh;
     background-color: #FFFFFF;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    margin: 0;
     font-weight: lighter;
+    
 }
 
 h1{
@@ -20,7 +24,12 @@ a {
 }
 
 p{
-   line-height: 25px;
+   line-height: 19px;
+   font-size: 17px;   
+   letter-spacing: .7px;
+   word-spacing: .2px;
+   font-weight: normal;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .flex-container{
     display: flex;
@@ -34,33 +43,42 @@ p{
     align-items: center;
     /*justify-content:space-between;*/
     row-gap: 0px;
-    width: 100%;    
+    width: 100%; 
+    height: 95px;   
 }
 .nav-top{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
-    height: 75px;
-    
-    
+    height: 65px;
+    align-items: baseline;
 }
 
 .nav-bottom{
-width: 100%;
-height: 25px;
+    display: flex;
+    width: 95%;
+    height: 25px;
+    justify-content: space-evenly;
+
 }
 .section_list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    justify-content: flex-start;    
     list-style: none;
     width: 33%;
     height: 60px;
     margin-bottom: 0;
     margin-top: 8px;
     padding: 0;
-    
+    column-gap: 2rem;
+    margin-left: 2rem;
+}
+
+.section_list h3{
+    font-size: medium;
+    font-weight: lighter;
 }
 
 
@@ -72,6 +90,7 @@ height: 25px;
     align-items: center; 
     height: 60px;
     margin-top: 8px;
+    letter-spacing: 5px;
     
     
     
@@ -86,25 +105,31 @@ height: 25px;
     width: 33%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     height: 60px;
-    margin-top: 8px;
+    margin-right: 2rem;
+    column-gap: 2rem;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
 }
+
 .bar{
-    display: flex;
-    margin-left: 80px;
+    display: flex;    
     background-image: url(assets/1200px-Google_Magnifying_Glass.svg.png);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    width: 250px;
     
 }
 
 .search-icon{
     width: 25px;
-    height: 25px;
-    
+    height: 25px;    
 }
+
+
 
 .hr-large-full{
     width: 90%;
@@ -119,8 +144,8 @@ height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin-left: 7rem;
     margin-top: 5%;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif ;
@@ -130,14 +155,14 @@ height: 25px;
     width: 50%;
     height: 0;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2.4px;
     margin: 0%;
 }
 .home{
     display: flex;
-    background-image: linear-gradient(to right, black, transparent, black), url(assets/Home_main_handsMakingPottery.jpg);
+    background-image: linear-gradient(to right, black, black, transparent, transparent, transparent, black, black), url(assets/Home_main_handsMakingPottery.jpg);
     height: 30rem;   
-    background-size: cover;
+    background-size: contain;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap; 
@@ -145,33 +170,32 @@ height: 25px;
     background-repeat: no-repeat;    
        
 }
-.home-img{
-    width: 100%;
-    height: 633px; 
-}
+
 
 .textbox{
     display: flex;
-    width: 1390px;
+    width: 95%;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 5rem;
 }
 
 .floating-text{
     display: flex;
-    width: 400px;
+    width: 20rem;
     flex-wrap: wrap;
     color: white;
-    font-size: xxx-large;
+    font-size: 38px;
     margin: 20px;
     letter-spacing: 3px;
-    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 .text1{
     
     align-self: flex-start;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .text2{
     align-self: flex-end;
@@ -179,11 +203,10 @@ height: 25px;
 }
 .about{
     /*grid-template-areas: ;*/
-    display: flex;
-    margin: auto;
+    display: flex;    
     flex-wrap: nowrap;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     
     /*margin-top: 3%;*/
@@ -192,10 +215,12 @@ height: 25px;
 }
 .about-left{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
-    margin: 0;
+    margin: 1%;
     row-gap: 5%;
+    margin-right: 0;
+    margin-left: 7rem;
     
     align-items: stretch;
     justify-content: flex-end;
@@ -203,7 +228,7 @@ height: 25px;
     height: fit-content;
 }
 .toptext{
-    width: 84%;
+    width: 80%;
     margin-left: 5%;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -213,10 +238,11 @@ height: 25px;
 }
 .about-left-bottom{
     display: flex;
-    align-items: stretch;
+    width: 87%;
+    justify-content: space-between;
     flex-direction: row;
-    column-gap: 1%;
-    margin-right: 5%;
+    column-gap: 1rem;
+    
     margin-left: 0%;
     margin-top: 0%;
     
@@ -224,26 +250,31 @@ height: 25px;
 .bottomtext{
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
     
-    width: 50%;
+    margin-left: 0;
+    margin-top: 0%;
+    width: 47%;
 }
 .about-pic1{
     
-    width: 45%;
+    width: 41%;
     
 
 }
 .about-right{
+    display: flex;
+    width: 57%;
     margin: 1%;
-    margin-right: 5%;
+    margin-right: 7rem;
     margin-top: 0%;
     margin-bottom: 0%;
+    align-items: end;
+    margin-left: 0;
 
 }
 .about-pic2{    
     width: 100%;
-    height: 100%;
+    object-fit: cover;
     transform: scalex(-1);
     
     
@@ -253,21 +284,65 @@ height: 25px;
 }
 
 .card-grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: 285px 285px 285px;
+    grid-template-areas: 
+        'mundo nat_vase feira_bowl'
+        'nat_pots pedra viaja'
+        'servico campeao troca';
+    justify-content: space-between;
+    /*display: flex;*/
     width: 100%;
-    margin: 5%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 5rem;
+    
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/   
+}
+.mundo{
+    grid-area: mundo;
+    
+}
+.nat_vase{
+    grid-area: nat_vase;
+}
+.feira_bowl{
+    grid-area: feira_bowl;
+}
+.nat_pots{
+    grid-area: nat_pots;
+}
+.pedra{
+    grid-area: pedra;
+}
+.viaja{
+    grid-area: viaja;
+}
+.servico{
+    grid-area: servico;
+}
+.campeao{
+    grid-area: campeao;
+}
+.troca{
+    grid-area: troca;
 }
 
 .product-card{
     display: flex;
     flex-direction: column;
-    width: 22%;
-    margin: 5%;
+    
+    /*margin: 5%;*/
+    /* padding: 4%; */
+    /* flex-grow: 1;
+    flex-basis: 25%; */
 }
 .product-img{
-    width: 100%;
+    width: 285px;
+    height: 380px;
+    object-fit: cover;
+    
+    border-style: solid;
+    border-width: 1px;
 }
 
 .card-row1{
@@ -289,12 +364,12 @@ height: 25px;
     width: 66%;
     height: 0;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     margin: 0%;
 }
 
-.card-text{
-
+.product-info{
+    margin-top: auto;
 }
 
 .card-bottom{
